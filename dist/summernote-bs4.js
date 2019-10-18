@@ -6672,9 +6672,9 @@ var HintPopover = /** @class */ (function () {
         this.$popover.hide();
         this.$content = this.$popover.find('.popover-content,.note-popover-content');
         this.$content.on('click', '.note-hint-item', function () {
-            _this.$content.find('.active').removeClass('active');
-            $$1(_this).addClass('active');
-            _this.replace();
+          _this.$content.find('.active').removeClass('active');
+          $(this).addClass('active');
+          _this.replace();
         });
     };
     HintPopover.prototype.destroy = function () {
